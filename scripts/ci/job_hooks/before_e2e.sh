@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-echo "====== install to be removed once travis cache is working again ====="
-npm ci
-
 npx @alfresco/adf-cli@alpha scan-env --host "$E2E_HOST" -u "$E2E_ADMIN_EMAIL_IDENTITY" -p "$E2E_ADMIN_PASSWORD_IDENTITY"
 
 # Download built application artifact from S3
